@@ -3,38 +3,48 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px; }
 
-.navbar {
+.nav, .topNav, .leftNav {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0;
   margin: 0; }
-
-@media screen and (min-width: 320px) and (max-width: 768px) {
-  .navbar {
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0; }
-    .navbar li.item {
-      display: block;
-      list-style-type: none; }
-      .navbar li.item a {
-        color: #ffffff;
-        display: block;
-        padding: 12px 20px;
-        text-decoration: none; }
-        .navbar li.item a:hover, .navbar li.item a.active {
-          background-color: rgba(0, 0, 0, 0.3); } }
-
-@media screen and (min-width: 768px) {
-  li.item {
-    display: inline-block;
+  .nav li.item, .topNav li.item, .leftNav li.item {
     list-style-type: none; }
-    li.item a {
-      color: #ffffff;
-      display: inline-block;
-      padding: 12px 20px;
-      text-decoration: none; }
-      li.item a:hover, li.item a.active {
-        background-color: rgba(0, 0, 0, 0.3); } }
+  .nav a, .topNav a, .leftNav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 20px; }
+
+.topNav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex; }
+  .topNav li.item {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    display: inline-block; }
+    .topNav li.item a {
+      display: inline-block; }
+      .topNav li.item a img {
+        max-width: 18px;
+        margin: 3px 7px 6px 0;
+        vertical-align: middle; }
+      .topNav li.item a.logo {
+        font-weight: 500; }
+        .topNav li.item a.logo .fa {
+          margin-right: 6px; }
+      .topNav li.item a:hover, .topNav li.item a.active {
+        background-color: rgba(0, 0, 0, 0.3); }
+
+.leftNav {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  margin-top: 44px;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0; }
+  .leftNav li.item {
+    display: block; }
+    .leftNav li.item a {
+      display: block; }
+      .leftNav li.item a:hover, .leftNav li.item a.active {
+        background-color: rgba(0, 0, 0, 0.3); }
