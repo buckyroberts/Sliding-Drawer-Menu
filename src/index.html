@@ -12,11 +12,11 @@
     <script>
         $(document).ready(function () {
             $('a.logo').click(function () {
-                var hidden = $('.leftNav');
-                if (hidden.hasClass('visible')) {
-                    hidden.animate({"left": "-1000px"}, 500).removeClass('visible');
+                var leftMenu = $('.leftNav');
+                if (leftMenu.hasClass('visible')) {
+                    leftMenu.animate({'left': '-310px'}, 600).removeClass('visible');
                 } else {
-                    hidden.animate({"left": "0px"}, 500).addClass('visible');
+                    leftMenu.animate({'left': '0'}, 600).addClass('visible');
                 }
             });
         });
@@ -40,7 +40,7 @@
         <li class="item"><a href="#">Some Item</a></li>
     </ul>
 
-    <ul class="leftNav">
+    <ul class="leftNav visible">
         <li class="item"><a href="#">Home</a></li>
         <li class="item"><a href="#">About</a></li>
         <li class="item"><a href="#">Blog</a></li>
