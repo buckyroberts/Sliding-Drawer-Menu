@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a.logo').click(function () {
+                var hidden = $('.leftNav');
+                if (hidden.hasClass('visible')) {
+                    hidden.animate({"left": "-1000px"}, 500).removeClass('visible');
+                } else {
+                    hidden.animate({"left": "0px"}, 500).addClass('visible');
+                }
+            });
+        });
+    </script>
 </head>
 <body>
 
