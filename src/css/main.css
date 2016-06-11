@@ -48,3 +48,7 @@ body {
       display: block; }
       .leftNav li.item a:hover, .leftNav li.item a.active {
         background-color: rgba(0, 0, 0, 0.3); }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .leftNav {
+    display: none; } }
