@@ -1,0 +1,40 @@
+body {
+  background: url("http://i.imgur.com/LBexVMs.jpg");
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; }
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin: 0; }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0; }
+    .navbar li.item {
+      display: block;
+      list-style-type: none; }
+      .navbar li.item a {
+        color: #ffffff;
+        display: block;
+        padding: 12px 20px;
+        text-decoration: none; }
+        .navbar li.item a:hover, .navbar li.item a.active {
+          background-color: rgba(0, 0, 0, 0.3); } }
+
+@media screen and (min-width: 768px) {
+  li.item {
+    display: inline-block;
+    list-style-type: none; }
+    li.item a {
+      color: #ffffff;
+      display: inline-block;
+      padding: 12px 20px;
+      text-decoration: none; }
+      li.item a:hover, li.item a.active {
+        background-color: rgba(0, 0, 0, 0.3); } }
